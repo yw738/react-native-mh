@@ -14,10 +14,7 @@ import { Button,Header } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import dimensions from 'Dimensions';
 const {width,height} = dimensions.get('window');
-import TabNavigator from 'react-native-tab-navigator';
-/*看到生命周期*/
-export default class demo3 extends Component {
-    //es6 写法。getInitalState()初始化state 已被淘汰。用constructor代替 。
+export default class Find extends Component {
     constructor(props) {
         super(props);  //执行父类的方法
         this.state = {
@@ -31,8 +28,6 @@ export default class demo3 extends Component {
     render() {
         return (
             <View style={style.sec}>
-                <Image source={{uri:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560093910564&di=362c4034fb975cb295cc89acce9c700f&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F01f44ee6d341eeb5ac4d6e48a2ec2b3b37f87d5d.jpg'}} style={{width:width,height:120}}/>
-
                 <ScrollView
                     horizontal={true}
                     showsHorizontalScrollIndicator={false}
@@ -42,59 +37,20 @@ export default class demo3 extends Component {
                 >
                     {this.scrollChild()}
                 </ScrollView>
-                <View style={{flexDirection:'row',position:'absolute',bottom:0,backgroundColor:'rgba(0,0,0,0.4)',width:width,alignItems:'center',justifyContent:'center',letterSpacing:'2'}}>
-                    {this.scrollRadius()}
-                </View>
-                <TabNavigator>
-                    <TabNavigator.Item
-                        selected={this.state.selectedTab === 'home'}
-                        selectedTitleStyle={{color:"#007aff"}}//设置tab标题颜色
-                        title="业务服务"
-                    >
-                        <View>
-                            <Text>这是首页</Text>
-                        </View>
-                    </TabNavigator.Item>
-                    <TabNavigator.Item
-                        selected={this.state.selectedTab === 'home2'}
-                        selectedTitleStyle={{color:"#007aff"}}//设置tab标题颜色
-                        title="业务服务"
-                    >
-                        <View>
-                            <Text>这是首页</Text>
-                        </View>
-                    </TabNavigator.Item>
-                    <TabNavigator.Item
-                        selected={this.state.selectedTab === 'home3'}
-                        selectedTitleStyle={{color:"#007aff"}}//设置tab标题颜色
-                        title="业务服务"
-                    >
-                        <View>
-                            <Text>这是首页</Text>
-                        </View>
-                    </TabNavigator.Item>
-                    <TabNavigator.Item
-                        selected={this.state.selectedTab === 'home4'}
-                        selectedTitleStyle={{color:"#007aff"}}//设置tab标题颜色
-                        title="业务服务"
-                    >
-                        <View>
-                            <Text>这是首页</Text>
-                        </View>
-                    </TabNavigator.Item>
-                </TabNavigator>
             </View>
         );
     }
     scrollChild(){
         let png = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560093910564&di=362c4034fb975cb295cc89acce9c700f&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F01f44ee6d341eeb5ac4d6e48a2ec2b3b37f87d5d.jpg';
+        let png2 = 'https://hbimg.huabanimg.com/96bc02063cfce7ac7f05958ce7b3bcab31471a8725d7b-F4BemQ_fw658';
+        let png3 = 'https://img3.doubanio.com/view/photo/l/public/p2370565654.webp';
         let arr=[];
-        let list = [png,png,png];
+        let list = [png,png2,png3];
         for (var i=0;i<list.length;i++){
             var src = list[i];
             //require 中的图片名字必须是一个静态字符串（不能使用变量！因为 require 是在编译时期执行，而非运行时期执行！）。
             arr.push(
-                    <Image key={i} source={{uri:src}} style={{width:width,height:120}}>
+                    <Image key={i} source={{uri:src}} style={{width:width,height:height}}>
                     </Image>
             )
         }
@@ -124,7 +80,7 @@ export default class demo3 extends Component {
 const style = StyleSheet.create({
     btn:{
         width:200,
-        height:50,
+        height:300,
         backgroundColor:'#ccc'
     },
     sec:{
@@ -151,4 +107,4 @@ const style = StyleSheet.create({
         borderWidth:2
     }
 });
-module.exports = demo3;
+module.exports = Find;

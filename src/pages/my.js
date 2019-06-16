@@ -18,7 +18,7 @@ const {width,height} = dimensions.get('window');
 
 
 /*看到生命周期*/
-export default class demo2 extends Component {
+export default class My extends Component {
     //es6 写法。getInitalState()初始化state 已被淘汰。用constructor代替 。
     constructor(props) {
         super(props);  //执行父类的方法
@@ -56,11 +56,6 @@ export default class demo2 extends Component {
                 >
                     {this.scrollChild()}
                 </ScrollView>
-                <Header
-                    leftComponent={{ icon: 'g-translate', color: '#fff' }}
-                    centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
-                    rightComponent={{ icon: 'g-translate', color: '#fff' }}
-                />
                 <View >
                     <Image source={require('./../images/0fa611e63cfdadab2b35d916246401d1_68463571_p0.png')} style={style.img}/>
                     <TextInput
@@ -121,9 +116,6 @@ export default class demo2 extends Component {
     }
 }
 //es6 的 getDefaultProps（）写法
-demo2.defaultProps={
-    tit:'es6测试'
-};
 const style = StyleSheet.create({
     btn:{
       width:200,
@@ -155,4 +147,4 @@ const style = StyleSheet.create({
         borderWidth:2
     }
 });
-module.exports = demo2;
+module.exports = My;
