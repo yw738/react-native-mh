@@ -2,7 +2,9 @@
 
  react-native 初始化项目。
  
-运行 react-native run-android 
+运行 
+
+react-native run-android 
  
 请确保环境配置完成再运行，否则会报错。
 
