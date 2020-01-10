@@ -21,7 +21,8 @@ react-native-tab-navigation 参照：
 
 https://www.jianshu.com/p/e068d017ad4d
 
-2020-1-10
+# 2020-1-10
+
 tips:这个项目是可以跑起来的。如果跑不起来：
 
 1、请检查环境是否安装。
