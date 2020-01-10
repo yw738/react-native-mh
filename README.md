@@ -1,9 +1,11 @@
 
 # react-native-init
 
- react-native 初始化项目。
+ react-native 初始化项目。-v 0.59.8
  
  git clone https://github.com/yw738/react-native-init.git
+ 
+ npm install
   
 react-native run-android 
  
