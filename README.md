@@ -30,3 +30,5 @@ tips:这个项目是可以跑起来的。如果跑不起来：
 1、请检查环境是否安装。
 
 2、node版本是否过低，不推荐使用版本为12.14.0的node（跑不起来），推荐使用版本为12.10.0的node。
+
+3、更改android=>gradle.properties 里面的密钥 MYAPP_RELEASE_STORE_FILE、MYAPP_RELEASE_KEY_ALIAS、MYAPP_RELEASE_STORE_PASSWORD、MYAPP_RELEASE_KEY_PASSWORD ，改为你自己的就可以了。（官网查一下，生成密钥的方式就OK了）;
