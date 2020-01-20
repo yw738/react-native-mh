@@ -1,4 +1,4 @@
-import {createAppContainer,createStackNavigator} from 'react-navigation';
+import { createAppContainer, createStackNavigator } from 'react-navigation';
 import Home from "./pages/home";
 import main from "./pages/main";
 import HomeDetail from "./pages/homeDetails/home_details";
@@ -16,18 +16,17 @@ const Rooter = createStackNavigator({
         // navigationOptions: ({ navigation }) => ({
         //     title: `${navigation.state.params.name}'s Profile'`,
         // }),
-
-    },//路由
+        headerTransparent: true
+    }, //路由
     main: {
         screen: main
     },
     HomeDetail: {
         screen: HomeDetail
     },
-},{
+}, {
     initialRouteName: 'main',
-    }
-);
+});
 // StackNavigatorConfig
 // 路由器的选项：
 // initialRouteName - 设置堆栈的默认屏幕。必须匹配路径配置中的一个键。//重定向
