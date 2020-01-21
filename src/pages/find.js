@@ -45,7 +45,7 @@ export default class Find extends Component {
         let png2 = 'https://hbimg.huabanimg.com/96bc02063cfce7ac7f05958ce7b3bcab31471a8725d7b-F4BemQ_fw658';
         let png3 = 'https://img3.doubanio.com/view/photo/l/public/p2370565654.webp';
         let arr=[];
-        let list = [png,png2,png3];
+        let list = [];
         for (var i=0;i<list.length;i++){
             var src = list[i];
             //require 中的图片名字必须是一个静态字符串（不能使用变量！因为 require 是在编译时期执行，而非运行时期执行！）。

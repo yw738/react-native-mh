@@ -34,7 +34,7 @@ export default class main extends Component {
                     component:Home
                 },
                 {
-                    title:'发现',
+                    title:'收藏',
                     icon:require('./../images/icon/find.png'),
                     tabName:'Find',
                     component:Find

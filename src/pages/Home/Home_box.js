@@ -26,7 +26,7 @@ export default class HomeBox extends Component {
             <View >
                 <View style={[style.header, style.flexC]}>
                     <View >
-                        <Text style={{ fontSize: 20, color: '#121212', letterSpacing: 2 }}>{title}</Text>
+                        <Text style={{ fontSize: 22, color: '#121212', letterSpacing: 2}}>{title}</Text>
                     </View>
                     <View style={[style.flexC]}>
                         <Text style={{ color: '#121212' }}>更多</Text>

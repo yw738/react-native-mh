@@ -131,9 +131,9 @@ export default class Home extends Component {
         }
     }
     componentWillMount() {
-        mhList().then(res => {
-            console.log(res);
-        })
+        // mhList().then(res => {
+        //     console.log(res);
+        // })
     }
     componentDidMount() {
 
@@ -143,6 +143,7 @@ export default class Home extends Component {
     }
     toSearch = () => {
         console.log('toSearch');
+        this.props.navigation.navigate('Search',{title:'首页选中的id'})
     }
     render() {
         return (
