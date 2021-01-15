@@ -1,7 +1,7 @@
 
 # react-native-mh
 
- react-native -v 0.59.8
+ react-native   v 0.59.8
  
  git clone https://github.com/yw738/react-native-mh.git
  
