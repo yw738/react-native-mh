@@ -73,9 +73,3 @@ MYAPP_RELEASE_KEY_PASSWORD ，
 改为你自己的就可以了。[生成密钥](https://reactnative.cn/docs/signed-apk-android#%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%AD%BE%E5%90%8D%E5%AF%86%E9%92%A5)
 
 4、本地是否有对应的 gradle 版本包。本项目用的是“gradle-6.3-all”，没有的需要下。[gradle 包国内镜像下载](https://mirrors.cloud.tencent.com/gradle/)
-
-# 2021-06-04
-
-tips：ts 检查
-
-1、运行 yarn tsc 对 TypeScript 文件进行类型检查。
